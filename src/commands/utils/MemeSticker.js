@@ -1,6 +1,10 @@
 import BaseCommand from '../../libs/BaseCommand.js'
 import { getDisplayUrl } from '../../utils/Upload.js'
-import { Sticker, StickerTypes } from 'wa-sticker-formatter'
+import pkg from 'wa-sticker-formatter';
+const { Sticker, StickerTypes } = pkg;
+
+// Your existing code
+
 
 export default class Command extends BaseCommand {
     constructor(client, handler) {

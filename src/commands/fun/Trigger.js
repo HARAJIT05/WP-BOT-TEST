@@ -1,7 +1,9 @@
 import BaseCommand from '../../libs/BaseCommand.js'
 import { getDisplayUrl } from '../../utils/Upload.js'
 import { Triggered } from '@shineiichijo/canvas-chan'
-import { Sticker, StickerTypes } from 'wa-sticker-formatter'
+import pkg from 'wa-sticker-formatter';
+const { Sticker, StickerTypes } = pkg;
+
 
 export default class Command extends BaseCommand {
     constructor(client, handler) {

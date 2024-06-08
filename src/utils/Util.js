@@ -2,7 +2,8 @@ import { readFile, unlink, writeFile, readdirSync, statSync } from 'fs'
 import { format, promisify } from 'util'
 import { exec } from 'child_process'
 import { tmpdir } from 'os'
-import { Canvacord } from 'canvacord'
+import pkg from 'canvacord';
+const { Canvacord } = pkg;
 import { join } from 'path'
 import { load } from 'cheerio'
 import FormData from 'form-data'

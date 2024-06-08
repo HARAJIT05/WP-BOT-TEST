@@ -1,5 +1,7 @@
 import BaseCommand from '../../libs/BaseCommand.js'
-import { Sticker, StickerTypes } from 'wa-sticker-formatter'
+import pkg from 'wa-sticker-formatter';
+const { Sticker, StickerTypes } = pkg;
+
 
 export default class Command extends BaseCommand {
     constructor(client, handler) {
